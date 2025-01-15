@@ -153,8 +153,30 @@ La anotación `@JsonIgnoreProperties` se utiliza para **ignorar propiedades espe
 ---
 
 <h1 style="text-align: left;">Desarrollado por 🎓</h1>
-### **`Luis Felipe Méndez González` 📠**  
+**Luis Felipe Méndez González 📠**  
+
 ---
 
 <h1 style="text-align: left;">Capturas del funcionamientos 🎓</h1>
 Aqui se verá como funciona el programa y que hace cada opción
+
+![primeraOpcion](https://github.com/user-attachments/assets/bc985867-f80e-4806-94bf-9fe5f4b75833)
+
+![segundaOpcionMostrarLibros](https://github.com/user-attachments/assets/f529313d-d2cd-47e8-9399-4a07b3383143)
+
+![segundaOpcionMostrarAutores](https://github.com/user-attachments/assets/699de94f-ec17-4b02-8172-739c5a8eea1f)
+
+![opcion4 y excepcion numerica](https://github.com/user-attachments/assets/166814b7-3ec8-4429-83de-24ab76a73522)
+
+![opcion5 Prueba con en](https://github.com/user-attachments/assets/9c3c9b72-701b-445c-b926-f2348b9051f9)
+
+Imagenes del aspecto base de datos:
+
+![Captura de pantalla 2025-01-14 201904](https://github.com/user-attachments/assets/b1d03737-03e1-41cf-bedb-88cbc0fca538)
+
+
+![Captura de pantalla 2025-01-14 201923](https://github.com/user-attachments/assets/ab134ffb-6345-47e6-b79c-c922a8c99d26)
+
+
+
+
