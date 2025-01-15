@@ -27,3 +27,9 @@ Este proyecto es una aplicacion que permite la busqueda, gestion y almacenamient
 4. Maven instalado para la gestión de dependencias.
 5. Sring Data JPA y PostgreSQL Driver (se pueden adjuntar al proyecto en Spring initializr)
 6. Jackson Databind y Jacks Core dependencias para el Json (se puede obtener los fragmentos de codigo en mvn Repository)
+
+<h1 style="text-align: left;">Instalación 🖥️</h1>
+    ```bash
+    git clone https://github.com/tu-usuario/literalura.git
+    cd LiterAlura
+    ```
