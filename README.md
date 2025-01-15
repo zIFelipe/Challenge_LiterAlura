@@ -1,5 +1,6 @@
 
-![images](https://github.com/user-attachments/assets/45dac5df-21b3-436e-b148-b7cbf94ec7bf)
+![badge literalura](https://github.com/user-attachments/assets/82447766-1cd9-49dc-b888-c06d55b1750e)
+
 
 <h1 align="center"> Challenge_LiterAlura 📚 </h1>
 
