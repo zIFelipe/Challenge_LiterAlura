@@ -28,16 +28,19 @@ Este proyecto es una aplicacion que permite la busqueda, gestion y almacenamient
 5. Sring Data JPA y PostgreSQL Driver (se pueden adjuntar al proyecto en Spring initializr)
 6. Jackson Databind y Jacks Core dependencias para el Json (se puede obtener los fragmentos de codigo en mvn Repository)
 
-<h1 style="text-align: left;">Instalación 🖥️</h1>
-1. Clona este repositorio:
+<h1 style="text-align: left;">Tutorial de Uso e instalación 🖥️</h1>
+1. Clona este repositorio e instalalo en tu computadora:
 
     ```bash
     git clone [https://github.com/tu-usuario/literalura.git](https://github.com/zIFelipe/Challenge_LiterAlura.git)
     cd LiterAlura
     ```
-2. Configura tu base de datos en el archivo`application.properties`:
+    
+2. Utiliza una IDE compatible con Java, preferiblemente IntelliJ IDEA.
    
-               spring.application.name=LiterAlura_Callenge
+3.  Configura tu base de datos en el archivo`application.properties`:
+
+                  spring.application.name=LiterAlura_Callenge
                   spring.datasource.url=jdbc:postgresql://${DB_HOST}/LiterAlura_BD
                   spring.datasource.username=${DB_USER}
                   spring.datasource.password=${DB_PASSWORD}
@@ -46,6 +49,10 @@ Este proyecto es una aplicacion que permite la busqueda, gestion y almacenamient
                   spring.jpa.hibernate.ddl-auto=update
                   spring.jpa.show-sql=true
                   spring.jpa.format-sql = true
+4.  Compila el programa mediante "LiterAluraChallengeApplication", en caso de no saber que hacer, revisar las capturas de pantalla adjuntas en el readme.
+   
+
+    
 
 <h1 style="text-align: left;">Funciones 💡</h1>
 
@@ -96,3 +103,58 @@ Este paquete contiene la lógica de negocio y la interacción con los servicios 
 - **IConvierteDatos (Interface)**: Interfaz que define los métodos necesarios para convertir los datos de la API en objetos del modelo.
 
 ---
+## Mapeo de Entidades 📊
+
+En este proyecto utilizamos **JPA (Java Persistence API)** y **Jackson** para mapear las clases modelo a tablas en la base de datos y para manejar la serialización/deserialización de objetos. A continuación se detallan las principales anotaciones utilizadas:
+
+### 1. **`@Entity` 📦**  
+La anotación `@Entity` marca una clase como una **entidad JPA**, lo que significa que esa clase será mapeada a una tabla en la base de datos. Cada entidad debe tener al menos un campo que se identifique como la **clave primaria**
+
+---
+
+### 2. **`@Table` 🏷️**  
+La anotación `@Table` se utiliza para **especificar la tabla de la base de datos** con la que se va a mapear la entidad.
+
+---
+
+### 3. **`@Id` 🔑**  
+Con `@Id` se indica el campo que es la **clave primaria** de la entidad. Esto permite que JPA sepa cómo identificar de manera única cada instancia de la entidad en la base de datos.
+
+---
+
+### 4. **`@GeneratedValue` ⚙️**  
+La anotación `@GeneratedValue` define la **estrategia de generación de valores** para la clave primaria. 
+
+---
+
+### 5. **`@Column` 📝**  
+`@Column` especifica el **mapeo de una columna en la tabla de la base de datos**.
+
+---
+
+### 6. **`@OneToMany` 🔗**  
+La anotación `@OneToMany` define una relación **uno a muchos** entre dos entidades. Indica que una entidad está asociada a muchas instancias de otra entidad, como un autor que tiene muchos libros.
+
+---
+
+### 7. **`@ManyToOne` 🔄**  
+La anotación `@ManyToOne` establece una relación **muchos a uno** entre dos entidades. Es el opuesto de `@OneToMany`. Se utiliza cuando varias instancias de una entidad están asociadas a una sola instancia de otra entidad. Por ejemplo, muchos libros pueden estar asociados a un solo autor.
+
+---
+
+### 8. **`@JsonAlias` 🔤**  
+La anotación `@JsonAlias` es utilizada en el contexto de **Jackson**, y permite asignar uno o más alias a un campo.
+
+---
+
+### 9. **`@JsonIgnoreProperties` 🚫**  
+La anotación `@JsonIgnoreProperties` se utiliza para **ignorar propiedades específicas** de un objeto durante la serialización o deserialización con **Jackson**. 
+
+---
+
+<h1 style="text-align: left;">Desarrollado por 🎓</h1>
+### **`Luis Felipe Méndez González` 📠**  
+---
+
+<h1 style="text-align: left;">Capturas del funcionamientos 🎓</h1>
+Aqui se verá como funciona el programa y que hace cada opción
